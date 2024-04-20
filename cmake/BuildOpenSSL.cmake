@@ -29,7 +29,7 @@ include(ExternalProject)
 
 # find packages
 find_package(Git REQUIRED)
-find_package(PythonInterp 3 REQUIRED)
+find_package(Python3 COMPONENTS Interpreter REQUIRED)
 
 # # used to apply various patches to OpenSSL
 find_program(PATCH_PROGRAM patch)
